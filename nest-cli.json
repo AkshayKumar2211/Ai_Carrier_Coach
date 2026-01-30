@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": ".",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "monorepo": true,
+  "root": ".",
+  "projects": {
+    "ai_carrier_coach": {
+      "type": "application",
+      "root": "apps/ai_carrier_coach",
+      "entryFile": "main",
+      "sourceRoot": "apps/ai_carrier_coach/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ai_carrier_coach/tsconfig.app.json"
+      }
+    },
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    }
+  }
+}
