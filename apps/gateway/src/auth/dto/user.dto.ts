@@ -20,3 +20,12 @@ export class CreateDto{
     password:string;
 
 }
+
+
+export class passwordDto{
+    @IsString()
+    email:string;
+
+    @IsString()
+    password:string;
+}

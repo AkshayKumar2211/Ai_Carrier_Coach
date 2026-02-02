@@ -4,6 +4,7 @@ import { DatabaseController } from './database.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import { User, UserSchema } from '../schemas/user/user.schema';
+import { Mcq, McqSchema } from '../schemas/mcq/mcq.schema';
 
 @Module({
   imports:[
@@ -11,7 +12,7 @@ import { User, UserSchema } from '../schemas/user/user.schema';
       isGlobal:true
     }),
     MongooseModule.forRoot(process.env.MONGO_URL || 'mongodb://localhost:27017/ai_carrier_coach'),
-    MongooseModule.forFeature([{name:User.name ,schema:UserSchema}])
+    MongooseModule.forFeature([{name:User.name ,schema:UserSchema},{name:Mcq.name,schema:McqSchema}])
   ],
   controllers: [DatabaseController],
   providers: [DatabaseService],

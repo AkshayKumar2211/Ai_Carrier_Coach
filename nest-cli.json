@@ -35,6 +35,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/gateway/tsconfig.app.json"
       }
+    },
+    "mcq": {
+      "type": "application",
+      "root": "apps/mcq",
+      "entryFile": "main",
+      "sourceRoot": "apps/mcq/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mcq/tsconfig.app.json"
+      }
     }
   }
 }
