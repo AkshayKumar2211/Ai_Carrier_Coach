@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document } from "mongoose";
+import { Role } from "../enums/user.enum";
 
 @Schema({timestamps:true})
 export class User extends Document{
@@ -61,7 +62,9 @@ wallet_balance: number;
   @Prop({type:String,default:null})
   refresh_token:string;
 
-  
+
+  @Prop({type:String,enum:Role,default:Role.USER})
+  role:string
 
 }
 
