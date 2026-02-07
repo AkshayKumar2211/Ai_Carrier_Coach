@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { Level, QuestionType } from "../enums/mcq.enum";
+import { Level, QuestionType } from "./mcq.enum";
+import { Document } from "mongoose";
 
 @Schema({timestamps:true})
 export class Mcq extends Document{

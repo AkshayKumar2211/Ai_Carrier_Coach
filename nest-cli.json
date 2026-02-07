@@ -27,6 +27,24 @@
         "tsConfigPath": "libs/common/tsconfig.lib.json"
       }
     },
+    "company": {
+      "type": "application",
+      "root": "apps/company",
+      "entryFile": "main",
+      "sourceRoot": "apps/company/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/company/tsconfig.app.json"
+      }
+    },
+    "compnay": {
+      "type": "application",
+      "root": "apps/compnay",
+      "entryFile": "main",
+      "sourceRoot": "apps/compnay/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/compnay/tsconfig.app.json"
+      }
+    },
     "gateway": {
       "type": "application",
       "root": "apps/gateway",
@@ -34,6 +52,15 @@
       "sourceRoot": "apps/gateway/src",
       "compilerOptions": {
         "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    },
+    "job": {
+      "type": "application",
+      "root": "apps/job",
+      "entryFile": "main",
+      "sourceRoot": "apps/job/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/job/tsconfig.app.json"
       }
     },
     "mcq": {
